@@ -6,14 +6,18 @@
 #    By: lruiz-es <lruiz-es@student.42barcel>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/03/03 08:41:31 by lruiz-es          #+#    #+#              #
-#    Updated: 2024/03/04 17:36:15 by lruiz-es         ###   ########.fr        #
+#    Updated: 2024/03/23 16:00:49 by lruiz-es         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+cc gentest.c -o gentest.out
+if ! [ -d test_output_files ]; then mkdir test_output_files; fi
+./gentest.out > test_output_files/output
 make re
-cc -g -Wall -Werror -Wextra main.c libftprintf.a libft/libft.a
+if ! [ -d user_output ]; then mkdir user_output; fi
+cc -g -Wall -Werror -Wextra main.c libftprintf.a
 mv a.out x_to_leaks
-cc -g -fsanitize=address -Wall -Werror -Wextra main.c libftprintf.a libft/libft.a
+cc -g -fsanitize=address -Wall -Werror -Wextra main.c libftprintf.a
 echo "++++++++++++++Informe de ejecucion++++++++++++++++++++++++++"
 echo "Se imprimiran los errores de gestion de memoria, si los hubiere"
 ./a.out > user_output/output
