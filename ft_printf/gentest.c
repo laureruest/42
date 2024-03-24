@@ -6,7 +6,7 @@
 /*   By: lruiz-es <lruiz-es@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 10:42:08 by lruiz-es          #+#    #+#             */
-/*   Updated: 2024/03/24 08:17:51 by lruiz-es         ###   ########.fr       */
+/*   Updated: 2024/03/24 09:59:37 by lruiz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,7 @@ es la S: %s\nY ahora la cadena completa \34Se imprimio solo la \34: %s\n"},\
 	//nreturned = printf("Imprimimos un monton de caracteres iniciales de
 	// cuatro cadenas diferentes %%c:%c, %%c:%c, %%c:%c,y un string %%s:%s\n",
 	//  'A', 'B', 'C', "Esto es la cadena completa");
+	nreturned = printf("imprimo null %s:", p[0]);
 	nreturned = printf("Imprimimos un monton de caracteres iniciales de\
  cuatro cadenas diferentes %%c:%c, %%c:%c, %%c:%c, y un string %%s:%s", 'A', 'B', 'C', "Esto es la cadena completa");
 	for (i = 0; i < 7; i += 2)

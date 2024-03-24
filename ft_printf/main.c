@@ -6,13 +6,13 @@
 /*   By: lruiz-es <lruiz-es@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/03 10:03:35 by lruiz-es          #+#    #+#             */
-/*   Updated: 2024/03/24 08:17:59 by lruiz-es         ###   ########.fr       */
+/*   Updated: 2024/03/24 10:01:55 by lruiz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //Comm_ent & Uncomment where necessary
 //#include <stdio.h>
-#include "libftprintf.h"
+#include "ft_printf.h"
 
 int	main(void)
 {
