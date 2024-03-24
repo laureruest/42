@@ -6,7 +6,7 @@
 /*   By: lruiz-es <lruiz-es@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/03 10:03:35 by lruiz-es          #+#    #+#             */
-/*   Updated: 2024/03/24 14:29:19 by lruiz-es         ###   ########.fr       */
+/*   Updated: 2024/03/24 16:43:29 by lruiz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,8 @@ es la S: %s\nY ahora la cadena completa \34Se imprimio solo la \34: %s\n"},\
 &battery_test_strings[i][1][0], &battery_test_strings[i][2][0]);
 		nreturned = ft_printf("Ha imprimido: %i caracteres\n", nreturned);
 	}
+	nreturned = ft_printf("Imprimo una cadena apuntada por un puntero nulo: %s\n", p[0]);
+	nreturned = ft_printf("Ha imprimido: %i caracteres\n", nreturned);
 	//nreturned = printf("Imprimimos un monton de caracteres iniciales de
 	// cuatro cadenas diferentes %%c:%c, %%c:%c, %%c:%c,y un string %%s:%s\n",
 	//  'A', 'B', 'C', "Esto es la cadena completa");
