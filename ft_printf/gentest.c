@@ -6,7 +6,7 @@
 /*   By: lruiz-es <lruiz-es@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 10:42:08 by lruiz-es          #+#    #+#             */
-/*   Updated: 2024/03/24 10:03:35 by lruiz-es         ###   ########.fr       */
+/*   Updated: 2024/03/24 14:28:59 by lruiz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,20 +53,25 @@ es la S: %s\nY ahora la cadena completa \34Se imprimio solo la \34: %s\n"},\
 	//			[i][1], battery_test_strings[i][2]);
 		nreturned = printf(&battery_test_strings[i][0][0],\
 &battery_test_strings[i][1][0], &battery_test_strings[i][2][0]);
+		nreturned = printf("Ha imprimido: %i caracteres\n", nreturned);
 	}
+	
 	//nreturned = printf("Imprimimos un monton de caracteres iniciales de
 	// cuatro cadenas diferentes %%c:%c, %%c:%c, %%c:%c,y un string %%s:%s\n",
 	//  'A', 'B', 'C', "Esto es la cadena completa");
 	nreturned = printf("Imprimimos un monton de caracteres iniciales de\
  cuatro cadenas diferentes %%c:%c, %%c:%c, %%c:%c, y un string %%s:%s", 'A', 'B', 'C', "Esto es la cadena completa");
+	nreturned = printf("Ha imprimido: %i caracteres\n", nreturned);
 	for (i = 0; i < 7; i += 2)
 	{
 //		nreturned = printf("Imprimo el puntero numero:%i:%p y el puntero numero
 //		%%i:%p\n", i, p[i], i + 1, p[i+1]); 
 		nreturned = printf("Imprimo el puntero numero:%i:%p y el puntero num\
 ero:%i:%p\n", i, p[i], i + 1, p[i+1]);
+	nreturned = printf("Ha imprimido: %i caracteres\n", nreturned);
 	}
 	nreturned = printf("Imprimo el 0 como %%i: %i, %%d: %d, %%u: %u, %%x: %x, %%X: %X", 0, 0, 0, 0, 0);
+	nreturned = printf("Ha imprimido: %i caracteres\n", nreturned);
 	for (i = -2147483648; i < 2147382646; i += 77777)
 	{
 //		nreturned = printf("Imprimo el entero como %%i:%i\n", i);
@@ -75,10 +80,14 @@ ero:%i:%p\n", i, p[i], i + 1, p[i+1]);
 //		nreturned = printf("Imprimo en hexadecimal minuscula %%x:%x, y en
 //		hexadecimal mayuscula %%X:%X\n", i, i);
 		nreturned = printf("Imprimo el entero como %%i:%i\n", i);
+	nreturned = printf("Ha imprimido: %i caracteres\n", nreturned);
 		nreturned = printf("Imprimo el entero como %%d:%d\n", i);
+	nreturned = printf("Ha imprimido: %i caracteres\n", nreturned);
 		nreturned = printf("Imprimo el entero como %%u:%u\n",i);
+	nreturned = printf("Ha imprimido: %i caracteres\n", nreturned);
 		nreturned = printf("Imprimo en hexadecimal minuscula %%x:%x, y\
  en hexadecimal mayuscula %%X:%X\n", i, i);
+	nreturned = printf("Ha imprimido: %i caracteres\n", nreturned);
 	}
 	return (nreturned);
 }
