@@ -6,7 +6,7 @@
 /*   By: lruiz-es <lruiz-es@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/03 10:03:35 by lruiz-es          #+#    #+#             */
-/*   Updated: 2024/03/23 11:13:42 by lruiz-es         ###   ########.fr       */
+/*   Updated: 2024/03/24 08:17:59 by lruiz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ es la S: %s\nY ahora la cadena completa \34Se imprimio solo la \34: %s\n"},\
 		nreturned = ft_printf("Imprimo el puntero numero:%i:%p y el puntero num\
 ero:%i:%p\n", i, p[i], i + 1, p[i+1]);
 	}
+	nreturned = ft_printf("Imprimo el 0 como %%i: %i, %%d: %d, %%u: %u, %%x: %x, %%X: %X", 0 , 0, 0, 0, 0);
 	for (i = -2147483648; i < 2147382646; i += 77777)
 	{
 //		nreturned = printf("Imprimo el entero como %%i:%i\n", i);
