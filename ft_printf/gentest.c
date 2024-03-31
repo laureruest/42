@@ -6,7 +6,7 @@
 /*   By: lruiz-es <lruiz-es@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/23 10:42:08 by lruiz-es          #+#    #+#             */
-/*   Updated: 2024/03/24 16:43:37 by lruiz-es         ###   ########.fr       */
+/*   Updated: 2024/03/31 08:57:57 by lruiz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,5 +90,15 @@ ero:%i:%p\n", i, p[i], i + 1, p[i+1]);
  en hexadecimal mayuscula %%X:%X\n", i, i);
 	nreturned = printf("Ha imprimido: %i caracteres\n", nreturned);
 	}
+	i = 2147483647;
+		nreturned = printf("Imprimo el entero como %%i:%i\n", i);
+	nreturned = printf("Ha imprimido: %i caracteres\n", nreturned);
+		nreturned = printf("Imprimo el entero como %%d:%d\n", i);
+	nreturned = printf("Ha imprimido: %i caracteres\n", nreturned);
+		nreturned = printf("Imprimo el entero como %%u:%u\n",i);
+	nreturned = printf("Ha imprimido: %i caracteres\n", nreturned);
+		nreturned = printf("Imprimo en hexadecimal minuscula %%x:%x, y\
+ en hexadecimal mayuscula %%X:%X\n", i, i);
+	nreturned = printf("Ha imprimido: %i caracteres\n", nreturned);
 	return (nreturned);
 }

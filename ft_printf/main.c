@@ -6,7 +6,7 @@
 /*   By: lruiz-es <lruiz-es@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/03 10:03:35 by lruiz-es          #+#    #+#             */
-/*   Updated: 2024/03/24 16:43:29 by lruiz-es         ###   ########.fr       */
+/*   Updated: 2024/03/31 08:58:02 by lruiz-es         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,5 +90,15 @@ ero:%i:%p\n", i, p[i], i + 1, p[i+1]);
  en hexadecimal mayuscula %%X:%X\n", i, i);
 		nreturned = ft_printf("Ha imprimido: %i caracteres\n", nreturned);
 	}
+		i = 2147483647;
+		nreturned = ft_printf("Imprimo el entero como %%i:%i\n", i);
+		nreturned = ft_printf("Ha imprimido: %i caracteres\n", nreturned);
+		nreturned = ft_printf("Imprimo el entero como %%d:%d\n", i);
+		nreturned = ft_printf("Ha imprimido: %i caracteres\n", nreturned);
+		nreturned = ft_printf("Imprimo el entero como %%u:%u\n",i);
+		nreturned = ft_printf("Ha imprimido: %i caracteres\n", nreturned);
+		nreturned = ft_printf("Imprimo en hexadecimal minuscula %%x:%x, y\
+ en hexadecimal mayuscula %%X:%X\n", i, i);
+		nreturned = ft_printf("Ha imprimido: %i caracteres\n", nreturned);
 	return (nreturned);
 }
